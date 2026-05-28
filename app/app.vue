@@ -7,7 +7,7 @@ useHead({
 </script>
 
 <template>
-  <UApp>
+  <UApp class="font-sans">
     <NuxtPage />
   </UApp>
 </template>
