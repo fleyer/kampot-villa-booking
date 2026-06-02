@@ -18,12 +18,18 @@ function startLoop() {
 
 function select(i: number) {
   active.value = i
-  if (timer) clearInterval(timer)
+  if (timer) {
+    clearInterval(timer)
+  }
   startLoop()
 }
 
 onMounted(startLoop)
-onUnmounted(() => { if (timer) clearInterval(timer) })
+onUnmounted(() => {
+  if (timer) {
+    clearInterval(timer)
+  }
+})
 </script>
 
 <template>

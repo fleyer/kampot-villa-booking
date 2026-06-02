@@ -12,9 +12,18 @@ const [labelBefore, labelAfter] = credits.label.split('{name}')
     </p>
 
     <nav class="mt-3 flex justify-center gap-6">
-      <NuxtLink :to="{ hash: '#' }" class="text-xs tracking-widest uppercase text-stone-400 hover:text-stone-700 transition-colors">Home</NuxtLink>
-      <NuxtLink :to="{ hash: '#booking' }" class="text-xs tracking-widest uppercase text-stone-400 hover:text-stone-700 transition-colors">Booking</NuxtLink>
-      <NuxtLink :to="{ hash: '#contact' }" class="text-xs tracking-widest uppercase text-stone-400 hover:text-stone-700 transition-colors">Contact</NuxtLink>
+      <NuxtLink
+        :to="{ hash: '#' }"
+        class="text-xs tracking-widest uppercase text-stone-400 hover:text-stone-700 transition-colors"
+      >Home</NuxtLink>
+      <NuxtLink
+        :to="{ hash: '#booking' }"
+        class="text-xs tracking-widest uppercase text-stone-400 hover:text-stone-700 transition-colors"
+      >Booking</NuxtLink>
+      <NuxtLink
+        :to="{ hash: '#contact' }"
+        class="text-xs tracking-widest uppercase text-stone-400 hover:text-stone-700 transition-colors"
+      >Contact</NuxtLink>
     </nav>
 
     <p class="mt-4 text-xs text-stone-400">

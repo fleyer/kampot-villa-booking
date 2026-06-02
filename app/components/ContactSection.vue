@@ -4,7 +4,11 @@ import { contactOptions } from '~/config/contact'
 </script>
 
 <template>
-  <UPageSection id="contact" :ui="sectionUi" :class="sectionClass">
+  <UPageSection
+    id="contact"
+    :ui="sectionUi"
+    :class="sectionClass"
+  >
     <h2 class="text-3xl font-serif font-bold text-brand-900 tracking-tight mb-12 text-center">
       Get in Touch
     </h2>
@@ -15,10 +19,19 @@ import { contactOptions } from '~/config/contact'
         :key="option.label"
         class="flex flex-col rounded-2xl shadow-md p-8 w-full max-w-[250px]"
       >
-        <UIcon :name="option.icon" class="text-primary size-8 mb-4" />
-        <h3 class="text-lg font-semibold text-stone-800">{{ option.label }}</h3>
-        <p class="mt-1 text-sm text-stone-400">{{ option.description }}</p>
-        <p class="mt-3 text-sm font-medium text-stone-600 flex-1">{{ option.value }}</p>
+        <UIcon
+          :name="option.icon"
+          class="text-primary size-8 mb-4"
+        />
+        <h3 class="text-lg font-semibold text-stone-800">
+          {{ option.label }}
+        </h3>
+        <p class="mt-1 text-sm text-stone-400">
+          {{ option.description }}
+        </p>
+        <p class="mt-3 text-sm font-medium text-stone-600 flex-1">
+          {{ option.value }}
+        </p>
         <UButton
           :to="option.href"
           color="primary"

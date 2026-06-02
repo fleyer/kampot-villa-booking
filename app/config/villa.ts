@@ -11,7 +11,7 @@ export const bookingOptions = [
     description: 'A private room in the villa, ideal for solo travellers or couples seeking a peaceful retreat.',
     image: 'https://picsum.photos/seed/room/600/400',
     cta: 'Book now',
-    href: '#',
+    href: '#'
   },
   {
     name: 'Group Rent',
@@ -19,7 +19,7 @@ export const bookingOptions = [
     description: 'Rent the entire villa exclusively for your group — perfect for families or friends.',
     image: 'https://picsum.photos/seed/group/600/400',
     cta: 'Book now',
-    href: '#',
+    href: '#'
   },
   {
     name: 'VIP Rent',
@@ -28,6 +28,6 @@ export const bookingOptions = [
     image: 'https://picsum.photos/seed/vip/600/400',
     cta: 'Book now',
     href: '#',
-    featured: true,
-  },
+    featured: true
+  }
 ]

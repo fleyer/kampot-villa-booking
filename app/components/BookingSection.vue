@@ -4,7 +4,11 @@ import { bookingOptions } from '~/config/villa'
 </script>
 
 <template>
-  <UPageSection id="booking" :ui="sectionUi" :class="sectionClass">
+  <UPageSection
+    id="booking"
+    :ui="sectionUi"
+    :class="sectionClass"
+  >
     <h2 class="text-3xl font-serif font-bold text-brand-900 tracking-tight mb-12 text-center">
       Book Your Stay
     </h2>
@@ -23,9 +27,15 @@ import { bookingOptions } from '~/config/villa'
         >
 
         <div class="flex flex-col flex-1 items-center text-center p-8">
-          <h3 class="text-lg font-semibold text-stone-800 tracking-wide">{{ option.name }}</h3>
-          <p class="mt-2 text-2xl font-bold text-primary">{{ option.price }}</p>
-          <p class="mt-4 text-sm text-stone-500 leading-relaxed flex-1">{{ option.description }}</p>
+          <h3 class="text-lg font-semibold text-stone-800 tracking-wide">
+            {{ option.name }}
+          </h3>
+          <p class="mt-2 text-2xl font-bold text-primary">
+            {{ option.price }}
+          </p>
+          <p class="mt-4 text-sm text-stone-500 leading-relaxed flex-1">
+            {{ option.description }}
+          </p>
           <UButton
             :to="option.href"
             color="primary"

@@ -11,7 +11,8 @@ const links = [
 ]
 
 onMounted(() => {
-  const onScroll = () => { scrolled.value = window.scrollY > 40 }
+  const onScroll = () => scrolled.value = window.scrollY > 40
+
   window.addEventListener('scroll', onScroll, { passive: true })
   onUnmounted(() => window.removeEventListener('scroll', onScroll))
 })
@@ -23,7 +24,11 @@ onMounted(() => {
     :class="scrolled ? 'bg-white/95 backdrop-blur border-b border-stone-200 shadow-sm' : 'bg-transparent'"
   >
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <NuxtLink :to="{ hash: '' }" class="font-serif text-xl tracking-wide" :class="scrolled ? 'text-stone-900' : 'text-white'">
+      <NuxtLink
+        :to="{ hash: '' }"
+        class="font-serif text-xl tracking-wide"
+        :class="scrolled ? 'text-stone-900' : 'text-white'"
+      >
         {{ villa.name }}
       </NuxtLink>
 
@@ -54,7 +59,6 @@ onMounted(() => {
         />
       </button>
     </div>
-
   </header>
 
   <!-- Mobile menu overlay -->
@@ -74,7 +78,10 @@ onMounted(() => {
           aria-label="Close menu"
           @click="mobileOpen = false"
         >
-          <UIcon name="i-lucide-x" class="size-6" />
+          <UIcon
+            name="i-lucide-x"
+            class="size-6"
+          />
         </button>
 
         <NuxtLink

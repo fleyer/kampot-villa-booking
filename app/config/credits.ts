@@ -1,5 +1,5 @@
 export const credits = {
   name: 'Romain Manchado',
   url: 'https://fleyer.github.io/portfolio',
-  label: 'Designed & built by {name}',
+  label: 'Designed & built by {name}'
 }

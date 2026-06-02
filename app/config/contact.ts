@@ -5,7 +5,7 @@ export const contactOptions = [
     description: 'Fastest way to reach us',
     value: '+855 12 345 678',
     href: 'https://wa.me/85512345678',
-    cta: 'Send a message',
+    cta: 'Send a message'
   },
   {
     icon: 'i-lucide-mail',
@@ -13,7 +13,7 @@ export const contactOptions = [
     description: 'For detailed enquiries',
     value: 'hello@villaserenity.com',
     href: 'mailto:hello@villaserenity.com',
-    cta: 'Send an email',
+    cta: 'Send an email'
   },
   {
     icon: 'i-lucide-phone',
@@ -21,7 +21,7 @@ export const contactOptions = [
     description: 'Available 9am – 8pm (ICT)',
     value: '+855 12 345 678',
     href: 'tel:+85512345678',
-    cta: 'Call us',
+    cta: 'Call us'
   },
   {
     icon: 'i-lucide-instagram',
@@ -29,6 +29,6 @@ export const contactOptions = [
     description: 'Follow us for updates',
     value: '@villaserenity',
     href: 'https://instagram.com/villaserenity',
-    cta: 'View profile',
-  },
+    cta: 'View profile'
+  }
 ]
