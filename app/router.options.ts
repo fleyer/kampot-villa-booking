@@ -7,7 +7,7 @@ export default {
     else if (to.hash) {
       return {
         el: to.hash,
-        top: 80,
+        top: 65,
         behavior: 'smooth'
       }
     } else if (['/', ''].includes(to.path)) return { top: 0 , behavior: 'smooth'}
