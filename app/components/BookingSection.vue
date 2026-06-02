@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { sectionUi } from '~/config/ui'
+import { sectionUi, sectionClass } from '~/config/ui'
 import { bookingOptions } from '~/config/villa'
 </script>
 
 <template>
-  <UPageSection id="booking" :ui="sectionUi" class="min-h-screen flex flex-col py-24 px-6">
+  <UPageSection id="booking" :ui="sectionUi" :class="sectionClass">
     <h2 class="text-3xl font-serif font-bold text-brand-900 tracking-tight mb-12 text-center">
       Book Your Stay
     </h2>
 
-    <div class="flex flex-col lg:flex-row gap-6 w-full justify-center items-center">
+    <div class="flex flex-col lg:flex-row gap-6 w-full justify-center items-center lg:items-stretch">
       <div
         v-for="option in bookingOptions"
         :key="option.name"
@@ -19,7 +19,7 @@ import { bookingOptions } from '~/config/villa'
         <img
           :src="option.image"
           :alt="option.name"
-          class="w-full h-48 object-cover"
+          class="w-full h-64 object-cover"
         >
 
         <div class="flex flex-col flex-1 items-center text-center p-8">

@@ -16,4 +16,11 @@
   --color-brand-800: #005c37;
   --color-brand-900: #004528;
   --color-brand-950: #002d1a;
+
+  --animate-progress: progress 3s linear forwards;
+
+  @keyframes progress {
+    from { width: 0% }
+    to   { width: 100% }
+  }
 }

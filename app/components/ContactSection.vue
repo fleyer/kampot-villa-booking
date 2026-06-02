@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { sectionUi } from '~/config/ui'
+import { sectionUi, sectionClass } from '~/config/ui'
 import { contactOptions } from '~/config/contact'
 </script>
 
 <template>
-  <UPageSection id="contact" :ui="sectionUi" class="min-h-screen flex flex-col py-24 px-6">
+  <UPageSection id="contact" :ui="sectionUi" :class="sectionClass">
     <h2 class="text-3xl font-serif font-bold text-brand-900 tracking-tight mb-12 text-center">
       Get in Touch
     </h2>
