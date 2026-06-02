@@ -10,8 +10,8 @@ All copy lives in `app/config/villa.ts` so it can be changed without touching co
 ```ts
 export const villa = {
   name: 'Villa Serenity',
-  tagline: 'Your private retreat on Koh Rong Sanloem',
-  location: 'Koh Rong Sanloem, Cambodia'
+  tagline: 'Your private retreat in Kampot',
+  location: 'Kampot, Cambodia'
 }
 ```
 
