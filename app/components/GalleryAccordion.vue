@@ -33,7 +33,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="flex h-screen w-full">
+  <div class="flex h-dvh w-full">
     <div
       v-for="(panel, i) in panels"
       :key="panel.label"
