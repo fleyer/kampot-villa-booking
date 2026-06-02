@@ -5,16 +5,16 @@ import { bookingOptions } from '~/config/villa'
 
 <template>
   <UPageSection id="booking" :ui="sectionUi" class="min-h-screen flex flex-col py-24 px-6">
-    <h2 class="text-3xl font-serif font-bold text-stone-800 tracking-tight mb-12 text-center">
+    <h2 class="text-3xl font-serif font-bold text-brand-900 tracking-tight mb-12 text-center">
       Book Your Stay
     </h2>
 
-    <div class="flex flex-col lg:flex-row gap-6 w-full justify-center">
+    <div class="flex flex-col lg:flex-row gap-6 w-full justify-center items-center">
       <div
         v-for="option in bookingOptions"
         :key="option.name"
-        class="flex flex-col flex-1 rounded-2xl border overflow-hidden max-w-80"
-        :class="option.featured ? 'border-amber-400' : 'border-stone-200'"
+        class="flex flex-col flex-1 rounded-2xl overflow-hidden max-w-80 shadow-md"
+        :class="option.featured ? 'ring-2 ring-brand-500' : ''"
       >
         <img
           :src="option.image"
@@ -24,7 +24,7 @@ import { bookingOptions } from '~/config/villa'
 
         <div class="flex flex-col flex-1 items-center text-center p-8">
           <h3 class="text-lg font-semibold text-stone-800 tracking-wide">{{ option.name }}</h3>
-          <p class="mt-2 text-2xl font-bold text-amber-500">{{ option.price }}</p>
+          <p class="mt-2 text-2xl font-bold text-primary">{{ option.price }}</p>
           <p class="mt-4 text-sm text-stone-500 leading-relaxed flex-1">{{ option.description }}</p>
           <UButton
             :to="option.href"

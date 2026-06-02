@@ -4,4 +4,16 @@
 @theme static {
   --font-sans: 'Public Sans', sans-serif;
   --font-serif: Georgia, 'Times New Roman', serif;
+
+  --color-brand-50:  #e6f8ef;
+  --color-brand-100: #c0efd7;
+  --color-brand-200: #8adcb6;
+  --color-brand-300: #4dc990;
+  --color-brand-400: #1eb86e;
+  --color-brand-500: #009E60;
+  --color-brand-600: #008a53;
+  --color-brand-700: #007345;
+  --color-brand-800: #005c37;
+  --color-brand-900: #004528;
+  --color-brand-950: #002d1a;
 }

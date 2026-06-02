@@ -30,7 +30,7 @@ Options (3):
 - `min-h-screen`, enough vertical padding to breathe.
 
 ### Cards grid
-- Cards sit in a row: `flex` with `gap`, centered horizontally.
+- Cards sit in a row: `flex` with `gap`, centered horizontally and vertically (`justify-center items-center`).
 - On mobile: stack vertically; on desktop (`lg:`): side by side.
 - Each card is equal width.
 

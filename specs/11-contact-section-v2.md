@@ -33,8 +33,9 @@ Initial channels (4):
 - Keep the `border-t border-stone-100` from the stub.
 
 ### Cards grid
-- Cards in a responsive grid: 1 column on mobile, 2 on `md:`, up to 4 on `xl:`.
-- Each card equal width, centered in the section.
+- Responsive grid: 1 column on mobile, 2 on `md:`, up to 4 on `xl:`.
+- Each grid cell uses `flex justify-center` so the card is centered within its cell.
+- Each card has `max-w-[250px] w-full`.
 
 ### Card
 - White background, `rounded-2xl`, `border border-stone-200`, `p-8`.
