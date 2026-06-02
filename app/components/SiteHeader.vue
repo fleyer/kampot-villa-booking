@@ -23,7 +23,7 @@ onMounted(() => {
     :class="scrolled ? 'bg-white/95 backdrop-blur border-b border-stone-200 shadow-sm' : 'bg-transparent'"
   >
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <NuxtLink :to="{ hash: '#' }" class="font-serif text-xl tracking-wide" :class="scrolled ? 'text-stone-900' : 'text-white'">
+      <NuxtLink :to="{ hash: '' }" class="font-serif text-xl tracking-wide" :class="scrolled ? 'text-stone-900' : 'text-white'">
         {{ villa.name }}
       </NuxtLink>
 
@@ -55,19 +55,38 @@ onMounted(() => {
       </button>
     </div>
 
-    <!-- Mobile menu -->
-    <div v-if="mobileOpen" class="md:hidden bg-white border-t border-stone-200">
-      <nav class="flex flex-col px-6 py-4 gap-4">
+  </header>
+
+  <!-- Mobile menu overlay -->
+  <Teleport to="body">
+    <Transition
+      enter-active-class="transition-opacity duration-300"
+      enter-from-class="opacity-0"
+      leave-active-class="transition-opacity duration-300"
+      leave-to-class="opacity-0"
+    >
+      <div
+        v-if="mobileOpen"
+        class="md:hidden fixed inset-0 z-40 bg-white flex flex-col items-center justify-center gap-10"
+      >
+        <button
+          class="absolute top-5 right-6 p-2 text-stone-400 hover:text-stone-700 cursor-pointer"
+          aria-label="Close menu"
+          @click="mobileOpen = false"
+        >
+          <UIcon name="i-lucide-x" class="size-6" />
+        </button>
+
         <NuxtLink
           v-for="link in links"
           :key="link.label"
           :to="link.to"
-          class="text-sm tracking-widest uppercase text-stone-600 hover:text-stone-900"
+          class="text-2xl font-serif tracking-widest uppercase text-stone-700 hover:text-brand-500 transition-colors cursor-pointer"
           @click="mobileOpen = false"
         >
           {{ link.label }}
         </NuxtLink>
-      </nav>
-    </div>
-  </header>
+      </div>
+    </Transition>
+  </Teleport>
 </template>
